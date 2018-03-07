@@ -1,0 +1,62 @@
+/* We provide a min-width and min-height for push buttons
+   so that they look elegant regardless of the width of the text. */
+QPushButton
+{
+    border-width: 1px;
+    border-color: bvlack;
+    border-style: solid;
+    border-radius: 3;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 3ex;
+}
+
+
+QPushButton:enabled {
+background-color: yellow;
+}
+
+QPushButton:hover {
+   background-color: wheat;
+}
+
+/* Increase the padding, so the text is shifted when the button is
+   pressed. */
+QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+QAbstractButton {
+    font: bold;
+}
+
+
+/* Bold text on status bar looks awful. */
+QLabel:hover {
+     background-color: wheat
+}
+
+QLabel {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    min-width: 12ex;
+    font: normal 14px;
+}
+
+
+QSpinBox {
+    font: normal 18px;
+    min-height: 1.5em;
+}
+
+QComboBox {
+    font: normal 18px;
+    min-height: 1.5em;
+}
+
+QRadioButton {
+    font: normal 18px;
+    min-height: 1.5em;
+}
